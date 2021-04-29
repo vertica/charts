@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  vertica:
+  - apiVersion: v2
+    appVersion: 10.1.1-0
+    created: "2021-04-29T17:22:08.5210197-04:00"
+    description: A Helm chart to deploy Vertica Analytic Database
+    digest: 0047863a8d96d3e9df7d0eb3dce71f901c74497601e3765e2f5950e10bd818b6
+    name: vertica
+    type: application
+    urls:
+    - https://github.com/vertica/vertica-kubernetes/releases/download/v0.1.0/vertica-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-04-29T17:22:08.5194798-04:00"
