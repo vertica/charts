@@ -3,6 +3,17 @@ entries:
   vertica:
   - apiVersion: v2
     appVersion: 10.1.1-0
+    created: "2021-08-16T15:16:05.9515715-04:00"
+    deprecated: true
+    description: DEPRECATED A Helm chart to deploy Vertica Analytic Database
+    digest: 31cb3c52cd9d9b77cf9f00ff59474b35729430db07144cfb7c58a92f50200bb7
+    name: vertica
+    type: application
+    urls:
+    - https://github.com/vertica/vertica-kubernetes/releases/download/v1.0.0/vertica-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 10.1.1-0
     created: "2021-04-29T17:22:08.5210197-04:00"
     description: A Helm chart to deploy Vertica Analytic Database
     digest: 0047863a8d96d3e9df7d0eb3dce71f901c74497601e3765e2f5950e10bd818b6
@@ -11,4 +22,24 @@ entries:
     urls:
     - https://github.com/vertica/vertica-kubernetes/releases/download/v0.1.0/vertica-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-29T17:22:08.5194798-04:00"
+  verticadb-operator:
+  - apiVersion: v2
+    created: "2021-08-16T15:16:05.9533141-04:00"
+    description: An operator that can deploy and manage Vertica clusters
+    digest: 156dbb933a804da3c791515c8e4a7fa623949ca1fe108e9c487f1ae8a4e11d74
+    name: verticadb-operator
+    type: application
+    urls:
+    - https://github.com/vertica/vertica-kubernetes/releases/download/v1.0.0/verticadb-operator-1.0.0.tgz
+    version: 1.0.0
+  verticadb-webhook:
+  - apiVersion: v2
+    created: "2021-08-16T15:16:05.9548094-04:00"
+    description: An admission controller webhook for validating VerticaDB CRs
+    digest: 275b329a09da582308159c4a8ee42b6043637536dbbdca140185b9a6172fcd9e
+    name: verticadb-webhook
+    type: application
+    urls:
+    - https://github.com/vertica/vertica-kubernetes/releases/download/v1.0.0/verticadb-webhook-1.0.0.tgz
+    version: 1.0.0
+generated: "2021-08-16T15:16:05.9479435-04:00"
