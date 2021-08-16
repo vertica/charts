@@ -6,5 +6,5 @@
 helm repo add vertica-charts https://vertica.github.io/charts
 helm repo update
 
-helm install cluster vertica-charts/vertica
+helm install vdb-op vertica-charts/verticadb-operator
 ```
