@@ -53,6 +53,15 @@ entries:
     version: 0.1.0
   verticadb-operator:
   - apiVersion: v2
+    created: "2021-10-25T17:06:55.666599244-04:00"
+    description: An operator that can deploy and manage Vertica clusters
+    digest: 9345e545a7d00deb259fd017bcc6b9b1ef3f3cdfa9d52edddf80000d11423da3
+    name: verticadb-operator
+    type: application
+    urls:
+    - https://github.com/vertica/vertica-kubernetes/releases/download/v1.1.0/verticadb-operator-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     created: "2021-08-16T15:16:05.9533141-04:00"
     description: An operator that can deploy and manage Vertica clusters
     digest: 156dbb933a804da3c791515c8e4a7fa623949ca1fe108e9c487f1ae8a4e11d74
@@ -63,6 +72,16 @@ entries:
     version: 1.0.0
   verticadb-webhook:
   - apiVersion: v2
+    created: "2021-10-25T17:06:55.667779036-04:00"
+    deprecated: true
+    description: An admission controller webhook for validating VerticaDB CRs
+    digest: 8ea85c69d2ea9daaf447f0dd8e286d43cf5b3bbbe0a1bdfdb255fa27884e46e7
+    name: verticadb-webhook
+    type: application
+    urls:
+    - https://github.com/vertica/vertica-kubernetes/releases/download/v1.1.0/verticadb-webhook-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
     created: "2021-08-16T15:16:05.9548094-04:00"
     description: An admission controller webhook for validating VerticaDB CRs
     digest: 275b329a09da582308159c4a8ee42b6043637536dbbdca140185b9a6172fcd9e
@@ -71,4 +90,4 @@ entries:
     urls:
     - https://github.com/vertica/vertica-kubernetes/releases/download/v1.0.0/verticadb-webhook-1.0.0.tgz
     version: 1.0.0
-generated: "2021-10-20T16:38:58.215624662-04:00"
+generated: "2021-10-25T17:06:55.664895424-04:00"
