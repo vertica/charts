@@ -1,0 +1,47 @@
+name: Add verticadb helm chart
+
+on:
+  workflow_dispatch:
+    inputs:
+      operator_version:
+        description: 'The release version of the operator we are adding the chart for (e.g. 1.8.0)'
+        type: string
+        required: true
+  workflow_call:
+    inputs:
+      operator_version:
+        description: 'The release version of the operator we are adding the chart for (e.g. 1.8.0)'
+        type: string
+        required: true
+
+env:
+  TARBALL_HOST: https://github.com/vertica/vertica-kubernetes/releases/download
+  CHART_PREFIX: verticadb-operator
+
+jobs:
+  generate-chart:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Download chart tarball
+      run: |
+        curl \
+          --remote-name \
+          --show-error \
+          --location \
+          --fail \
+          ${TARBALL_HOST}/v${{ inputs.operator_version }}/$CHART_PREFIX-${{ inputs.operator_version }}.tgz
+
+    - name: Generate the helm repo index
+      run: |
+        helm repo index \
+          --merge index.yaml \
+          --url $TARBALL_HOST/v${{ inputs.operator_version }} \
+          .
+
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Add verticadb-operator-${{ inputs.operator_version }}
+        file_pattern: index.yaml
+
