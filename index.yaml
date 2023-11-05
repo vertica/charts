@@ -51,6 +51,17 @@ entries:
     urls:
     - https://github.com/vertica/vertica-kubernetes/releases/download/v0.1.0/vertica-0.1.0.tgz
     version: 0.1.0
+  vertica-kafka-scheduler:
+  - apiVersion: v2
+    appVersion: 12.0.3
+    created: "2023-11-05T15:16:27.503075634-04:00"
+    description: Deploys Vertica's Kafka Scheduler (vkconfig) for Kubernetes
+    digest: 217750e8beed581e29d52d0de2296ecfddf1173908d7595e5133c0f2a30df76e
+    name: vertica-kafka-scheduler
+    type: application
+    urls:
+    - https://github.com/spilchen/vkconfig-chart/releases/download/0.1.0/vertica-kafka-scheduler-0.1.0.tgz
+    version: 0.1.0
   verticadb-operator:
   - apiVersion: v2
     created: "2023-08-03T11:27:54.282215106Z"
@@ -205,4 +216,4 @@ entries:
     urls:
     - https://github.com/vertica/vertica-kubernetes/releases/download/v1.0.0/verticadb-operator-1.0.0.tgz
     version: 1.0.0
-generated: "2023-08-03T11:27:54.278194477Z"
+generated: "2023-11-05T15:16:27.50183141-04:00"
