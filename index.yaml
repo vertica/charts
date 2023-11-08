@@ -1,34 +1,5 @@
 apiVersion: v1
 entries:
-  hdfs-ci:
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: "2021-10-20T16:38:58.217146153-04:00"
-    dependencies:
-    - condition: condition.subchart.config
-      name: hdfs-ci-config
-      repository: file://../hdfs-ci-config
-      version: 0.1.0
-    - condition: condition.subchart.kerberos
-      name: hdfs-ci-krb5
-      repository: file://../hdfs-ci-krb5
-      tags:
-      - kerberos
-      version: 0.1.0
-    - condition: condition.subchart.namenode
-      name: hdfs-ci-namenode
-      repository: file://../hdfs-ci-namenode
-      version: 0.1.0
-    - condition: condition.subchart.datanode
-      name: hdfs-ci-datanode
-      repository: file://../hdfs-ci-datanode
-      version: 0.1.0
-    description: Launches HDFS for CI purposes
-    digest: 7daedda50c5e8ddf83eb924f351266e60ddf34fc8583532d5dbf19204051ed6b
-    name: hdfs-ci
-    urls:
-    - https://github.com/spilchen/kubernetes-HDFS/releases/download/0.1.1/hdfs-ci-0.1.1.tgz
-    version: 0.1.1
   vertica:
   - apiVersion: v2
     appVersion: 10.1.1-0
@@ -54,13 +25,13 @@ entries:
   vertica-kafka-scheduler:
   - apiVersion: v2
     appVersion: 12.0.3
-    created: "2023-11-05T15:16:27.503075634-04:00"
+    created: "2023-11-08T15:24:04.788193117-04:00"
     description: Deploys Vertica's Kafka Scheduler (vkconfig) for Kubernetes
     digest: 217750e8beed581e29d52d0de2296ecfddf1173908d7595e5133c0f2a30df76e
     name: vertica-kafka-scheduler
     type: application
     urls:
-    - https://github.com/spilchen/vkconfig-chart/releases/download/0.1.0/vertica-kafka-scheduler-0.1.0.tgz
+    - https://github.com/vertica/kafka-scheduler-chart/releases/download/0.1.0/vertica-kafka-scheduler-0.1.0.tgz
     version: 0.1.0
   verticadb-operator:
   - apiVersion: v2
@@ -216,4 +187,4 @@ entries:
     urls:
     - https://github.com/vertica/vertica-kubernetes/releases/download/v1.0.0/verticadb-operator-1.0.0.tgz
     version: 1.0.0
-generated: "2023-11-05T15:16:27.50183141-04:00"
+generated: "2023-11-08T15:24:04.786111661-04:00"
