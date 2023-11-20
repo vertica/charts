@@ -25,6 +25,23 @@ entries:
   vertica-kafka-scheduler:
   - apiVersion: v2
     appVersion: 23.4.0
+    created: "2023-11-20T17:01:13.687625549-04:00"
+    description: Deploys the Vertica Kafka Scheduler in Kubernetes
+    digest: b396e1b276ba16eb198dc8ad60d32fa7ce6c1a01cb9d6eb903dad822f5587e5f
+    home: https://github.com/vertica/kafka-scheduler-chart
+    icon: https://raw.githubusercontent.com/vertica/kafka-scheduler-chart/main/vertica-logo.png
+    maintainers:
+    - email: mspilchen@opentext.com
+      name: Matt Spilchen
+    name: vertica-kafka-scheduler
+    sources:
+    - https://github.com/vertica/kafka-scheduler-chart
+    type: application
+    urls:
+    - https://github.com/vertica/kafka-scheduler-chart/releases/download/0.1.4/vertica-kafka-scheduler-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 23.4.0
     created: "2023-11-09T16:29:34.049601139-04:00"
     description: Deploys the Vertica Kafka Scheduler in Kubernetes
     digest: a61491d3747d7d6b9a23e8f5d3028d73821110bf1acd8ddd5ba82199e519d103
@@ -232,4 +249,4 @@ entries:
     urls:
     - https://github.com/vertica/vertica-kubernetes/releases/download/v1.0.0/verticadb-operator-1.0.0.tgz
     version: 1.0.0
-generated: "2023-11-09T16:29:34.042869584-04:00"
+generated: "2023-11-20T17:01:13.677769776-04:00"
