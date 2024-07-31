@@ -211,6 +211,15 @@ entries:
     - https://github.com/vertica/vertica-kubernetes/releases/download/v2.0.0/verticadb-operator-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
+    created: "2024-07-31T20:16:01.98488223Z"
+    description: An operator that can deploy and manage Vertica clusters
+    digest: ba68409b02610405d7a1795b664e521c003a5cb8990acb6815b0b898db2f6be4
+    name: verticadb-operator
+    type: application
+    urls:
+    - https://github.com/vertica/vertica-kubernetes/releases/download/v1.11.3/verticadb-operator-1.11.3.tgz
+    version: 1.11.3
+  - apiVersion: v2
     created: "2023-08-03T11:27:54.282215106Z"
     description: An operator that can deploy and manage Vertica clusters
     digest: 2264ab71cdb3dacac2de99f264103a2651a0c3def332c85e00a410f9a714aa9c
@@ -363,4 +372,4 @@ entries:
     urls:
     - https://github.com/vertica/vertica-kubernetes/releases/download/v1.0.0/verticadb-operator-1.0.0.tgz
     version: 1.0.0
-generated: "2024-05-14T14:09:56.78974794Z"
+generated: "2024-07-31T20:16:01.982877803Z"
