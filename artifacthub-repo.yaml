@@ -2,8 +2,8 @@
 #
 repositoryID: f5273a5a-51c6-474f-83b0-5e2525385b83
 owners:
-  - name: Matt Spilchen
-    email: matt.spilchen@microfocus.com
+  - name: Cai Chen
+    email: cchen8@opentext.com
 ignore: 
   - name: verticadb-webhook
   - name: vertica
