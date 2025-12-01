@@ -15,7 +15,7 @@ on:
         required: true
 
 env:
-  TARBALL_HOST: https://github.com/vertica/vertica-kubernetes/releases/download
+  TARBALL_HOST: https://raw.githubusercontent.com/cchen-vertica/charts/main
   CHART_PREFIX: verticadb-operator
 
 jobs:
