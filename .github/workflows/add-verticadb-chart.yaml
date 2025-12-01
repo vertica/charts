@@ -37,7 +37,7 @@ jobs:
       run: |
         helm repo index \
           --merge index.yaml \
-          --url $TARBALL_HOST/v${{ inputs.operator_version }} \
+          --url $TARBALL_HOST \
           .
 
     - uses: stefanzweifel/git-auto-commit-action@v4
