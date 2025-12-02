@@ -15,7 +15,8 @@ on:
         required: true
 
 env:
-  TARBALL_HOST: https://raw.githubusercontent.com/cchen-vertica/charts/main/charts
+  # TODO: Update TARBALL_HOST when moving to official repo
+  TARBALL_HOST: https://raw.githubusercontent.com/cchen-vertica
   CHART_PREFIX: verticadb-operator
 
 jobs:
