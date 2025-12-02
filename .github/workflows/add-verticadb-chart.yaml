@@ -16,7 +16,7 @@ on:
 
 env:
   # TODO: Update TARBALL_HOST when moving to official repo
-  TARBALL_HOST: https://raw.githubusercontent.com/cchen-vertica
+  TARBALL_HOST: https://raw.githubusercontent.com/cchen-vertica/charts/main
   CHART_PREFIX: verticadb-operator
 
 jobs:
@@ -37,10 +37,9 @@ jobs:
 
     - name: Generate the helm repo index
       run: |
-        CHART_TARBALL=$CHART_PREFIX-${{ inputs.operator_version }}.tgz
         helm repo index \
           --merge index.yaml \
-          --url $TARBALL_HOST/$CHART_TARBALL \
+          --url $TARBALL_HOST \
           .
 
     - uses: stefanzweifel/git-auto-commit-action@v4
