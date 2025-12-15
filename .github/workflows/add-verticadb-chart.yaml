@@ -15,7 +15,7 @@ on:
         required: true
 
 env:
-  TARBALL_HOST: https://github.com/vertica/vertica-kubernetes/releases/download
+  TARBALL_HOST: https://raw.githubusercontent.com/vertica/charts/main
   CHART_PREFIX: verticadb-operator
 
 jobs:
@@ -24,20 +24,21 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Download chart tarball
+    - name: Verify chart tarball exists
       run: |
-        curl \
-          --remote-name \
-          --show-error \
-          --location \
-          --fail \
-          ${TARBALL_HOST}/v${{ inputs.operator_version }}/$CHART_PREFIX-${{ inputs.operator_version }}.tgz
+        CHART_TARBALL=$CHART_PREFIX-${{ inputs.operator_version }}.tgz
+        if [ -f "charts/$CHART_TARBALL" ]; then
+          echo "Successfully found chart tarball: $CHART_TARBALL"
+        else
+          echo "Error: chart tarball $CHART_TARBALL not found."
+          exit 1
+        fi
 
     - name: Generate the helm repo index
       run: |
         helm repo index \
           --merge index.yaml \
-          --url $TARBALL_HOST/v${{ inputs.operator_version }} \
+          --url $TARBALL_HOST \
           .
 
     - uses: stefanzweifel/git-auto-commit-action@v4
