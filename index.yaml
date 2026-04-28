@@ -173,9 +173,9 @@ entries:
     type: application
     urls:
     - https://github.com/vertica/charts/releases/download/v26.2.0-0/verticadb-operator-26.2.0-0.tgz
-    version: 26.2.0-0
+    version: 26.2.0
   - apiVersion: v2
-    created: "2026-04-28T23:21:26.527842737Z"
+    created: "2026-04-28T23:21:26.465272877Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -199,7 +199,7 @@ entries:
     name: verticadb-operator
     type: application
     urls:
-    - https://github.com/vertica/charts/releases/download/v26.2.0-0/charts/verticadb-operator-26.2.0-0.tgz
+    - https://github.com/vertica/charts/releases/download/v26.2.0-0/verticadb-operator-26.2.0-0.tgz
     version: 26.2.0-0
   - apiVersion: v2
     created: "2026-02-17T01:20:36.74439443Z"
