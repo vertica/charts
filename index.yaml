@@ -256,7 +256,7 @@ entries:
     - https://github.com/vertica/charts/releases/download/v26.2.0-0/verticadb-operator-26.2.0-0.tgz
     version: 26.2.0-0
   - apiVersion: v2
-    created: "2026-02-17T01:20:36.74439443Z"
+    created: "2026-06-22T01:20:36.74439443Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -280,8 +280,35 @@ entries:
     name: verticadb-operator
     type: application
     urls:
-    - https://github.com/vertica/charts/releases/download/v26.1.2-0/verticadb-operator-26.1.2-0.tgz
+    - https://github.com/vertica/charts/releases/download/v26.1.2-1/verticadb-operator-26.1.2-1.tgz
     version: 26.1.2
+  - apiVersion: v2
+    created: "2026-06-22T01:20:36.74439443Z"
+    dependencies:
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 9.2.10
+    - alias: prometheusServer
+      condition: prometheusServer.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 75.9.0
+    - condition: loki.enabled
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: 6.31.0
+    - condition: alloy.enabled
+      name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.2.0
+    description: An operator that can deploy and manage Vertica clusters
+    digest: f827dca6acf5f524804822d4facc027b17adf4e869a443f69cc796ab4d503c35
+    name: verticadb-operator
+    type: application
+    urls:
+    - https://github.com/vertica/charts/releases/download/v26.1.2-1/verticadb-operator-26.1.2-1.tgz
+    version: 26.1.2-1
   - apiVersion: v2
     created: "2026-02-17T01:20:36.74439443Z"
     dependencies:
