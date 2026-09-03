@@ -173,7 +173,7 @@ entries:
     type: application
     urls:
     - https://github.com/vertica/charts/releases/download/v26.2.2-0/verticadb-operator-26.2.2-0.tgz
-    version: 26.2.2-0
+    version: 26.2.2
   - apiVersion: v2
     created: "2026-09-03T16:03:23.536098094Z"
     dependencies:
@@ -199,7 +199,7 @@ entries:
     name: verticadb-operator
     type: application
     urls:
-    - https://github.com/vertica/charts/releases/download/v26.2.2-0/charts/verticadb-operator-26.2.2-0.tgz
+    - https://github.com/vertica/charts/releases/download/v26.2.2-0/verticadb-operator-26.2.2-0.tgz
     version: 26.2.2-0
   - apiVersion: v2
     created: "2026-06-18T23:21:26.465272877Z"
